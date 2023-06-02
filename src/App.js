@@ -140,7 +140,7 @@ class App extends Component {
                   alt="password"
                 />
                 <input
-                  type="text"
+                  type="password"
                   placeholder="Enter Password"
                   className="input"
                   onChange={this.latestPassword}
@@ -164,7 +164,7 @@ class App extends Component {
           <div className="your-password-search-container">
             <h1 className="password-text">
               Your Passwords
-              <span className="count">0</span>
+              <span className="count">{newList.length}</span>
             </h1>
 
             <div className="search-container">
@@ -177,6 +177,8 @@ class App extends Component {
                 type="search"
                 className="search-input"
                 placeholder="search"
+                onChange={this.searchList}
+                value={searchInput}
               />
             </div>
           </div>
