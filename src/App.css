@@ -198,17 +198,52 @@ body {
   color: #ffffff;
   font-family: 'Roboto';
 }
+.password-count {
+  display: flex;
+  flex-direction: row;
+}
 .result-container {
   display: flex;
   flex-direction: row;
   border: 1px solid #64748b;
   border-radius: 10px;
-  margin: 20px;
+  margin: 40px;
   flex-wrap: wrap;
   padding: 5px;
+}
+.item-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .initial {
   color: #ffffff;
   border-radius: 40px;
-  padding: 10px;
+  text-align: center;
+  padding-top: 4px;
+  height: 30px;
+  width: 30px;
+}
+.list-content {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.stars {
+  width: 110px;
+  height: 20px;
+}
+.password {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.del-btn {
+  background-color: transparent;
+  border: none;
+}
+.delete-img {
+  height: 20px;
+  width: 20px;
 }

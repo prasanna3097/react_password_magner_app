@@ -103,7 +103,7 @@ class App extends Component {
               className="password-manager-small-img"
             />
 
-            <from className="form-inputs-container" onSubmit={this.addContent}>
+            <form className="form-inputs-container" onSubmit={this.addContent}>
               <h1 className="form-heading">Add New Password</h1>
               <div className="input-holder">
                 <img
@@ -152,7 +152,7 @@ class App extends Component {
                   Add
                 </button>
               </div>
-            </from>
+            </form>
           </div>
           <img
             src="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png"
@@ -162,11 +162,10 @@ class App extends Component {
         </div>
         <div className="your-password-container">
           <div className="your-password-search-container">
-            <h1 className="password-text">
-              Your Passwords
-              <span className="count">{newList.length}</span>
-            </h1>
-
+            <div className="password-count">
+              <h1 className="password-text">Your Passwords</h1>
+              <p className="count">{newList.length}</p>
+            </div>
             <div className="search-container">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
@@ -219,7 +218,7 @@ class App extends Component {
                     {isShow && <p className="password">{eachValue.Password}</p>}
                   </div>
                   <button
-                    className="bel-btn"
+                    className="del-btn"
                     type="button"
                     data-testid="delete"
                     onClick={() => this.deleteItem(eachValue.id)}
